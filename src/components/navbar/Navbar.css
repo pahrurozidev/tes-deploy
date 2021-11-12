@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #00061a;
+}
+
+nav {
+  width: 400px;
+  height: 100vh;
+  position: relative;
+  transform: translateX(-82%);
+  transition: all 0.5s;
+  background: #00061a;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.slide {
+  transform: translateX(0%);
+  background: #000d33;
+  border-right: 2px solid rgb(0, 255, 42);
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding-top: 50px;
+  transition: all 0.3s;
+}
+
+nav li {
+  margin: 30px 0 0;
+}
+
+nav .box {
+  width: 200px;
+  height: 28px;
+  border: 2px solid rgb(0, 255, 42);
+  transform: skewX(-30deg);
+  text-align: center;
+}
+
+nav .box:hover {
+  background: rgb(69, 255, 97);
+  color: rgb(255, 255, 255);
+}
+
+.box p {
+  transform: skewX(30deg);
+}
+
+nav li a {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
+  color: #dce1f5;
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.a-class {
+  opacity: 0;
+}
+
+.a {
+  opacity: 1;
+}
+
+nav .toggle {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: #000d33;
+  cursor: pointer;
+}
+
+nav .toggle .button {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background: #dce1f5;
+}
+
+nav .copyright {
+  font-size: 14px;
+  position: absolute;
+  bottom: 20px;
+  left: 26%;
+  right: 26%;
+  color: #5e6272;
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    width: 300px;
+  }
+
+  nav .box {
+    width: 150px;
+  }
+
+  nav .copyright {
+    left: 17%;
+    right: 17%;
+  }
+}
+

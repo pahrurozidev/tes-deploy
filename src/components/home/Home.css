@@ -1,0 +1,20 @@
+.home {
+  width: 550px;
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  color: white;
+  font-size: 14px;
+}
+
+.home h2 {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .home {
+      width: 260px;
+      top: 55%;
+      left: 15%;
+    }
+}

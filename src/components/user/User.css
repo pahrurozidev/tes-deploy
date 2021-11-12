@@ -1,0 +1,47 @@
+.user {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.user .user-img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.user h2 {
+  font-size: 16px;
+  margin: 20px 0 -10px 5px;
+}
+
+.user .s-media ul {
+  width: 200px;
+  display: flex;
+  list-style: none;
+}
+
+.user li {
+  margin: 20px 50px 20px -30px;
+}
+
+.hr {
+  width: 2px;
+  height: 100vh;
+  background: rgb(0, 255, 42);
+  position: absolute;
+  left: 300px;
+}
+
+@media screen and (max-width: 576px) {
+  .user {
+    left: 38%;
+  }
+
+  .hr {
+    left: 10%;
+    opacity: 0;
+  }
+}
